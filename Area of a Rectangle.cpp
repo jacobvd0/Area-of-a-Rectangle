@@ -1,10 +1,13 @@
 #include <iostream>
 
+float calcArea(float w, float h) {
+    return w * h;
+}
+
 int main()
 {
     float rectWidth = 0.0f;
     float rectHeight = 0.0f;
-    float rectArea = 0.0f;
 
     
 
@@ -18,9 +21,9 @@ int main()
     std::cin >> rectHeight;
     std::cout << "\n";
     
-    rectArea = rectWidth * rectHeight;
+    
     
     
     std::cout << "H: " << rectHeight << " , W: " << rectWidth << std::endl;
-    std::cout << "Area: " << rectArea << std::endl;
+    std::cout << "Area: " << calcArea(rectWidth, rectHeight) << std::endl;
 }
